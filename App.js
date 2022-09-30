@@ -46,6 +46,7 @@ export default function App() {
 
   const deleteItem = (key) => {
     remove(ref(database, "items/" + key));
+    //(ref.database, "items/" + key).remove();
     //Detele ei jostain syystä toimi yritin löytää apua myös stack overflowista. Mikään ei toiminut.
   };
   const listSeparator = () => {
